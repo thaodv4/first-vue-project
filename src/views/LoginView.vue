@@ -26,6 +26,8 @@ watchEffect(() => {
 
 <template>
   <div class="login">
+    <div>
+      <h2>Any account</h2>
     <form @submit.prevent="handleSubmit">
       <div class="form-group">
         <label for="username">Username:</label>
@@ -37,6 +39,7 @@ watchEffect(() => {
       </div>
       <button type="submit" :disabled="auth.isLoading">Login</button>
     </form>
+    </div>
   </div>
 </template>
 
